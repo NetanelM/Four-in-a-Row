@@ -1,0 +1,78 @@
+.game-scope {
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.row-game {
+  display: flex;
+  justify-content: space-between;
+}
+
+.board {
+  border: 20px solid rgb(69, 170, 184);
+  background: #45aab8;
+  justify-content: center;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  border: 10px solid rgb(0, 73, 83);
+  border-radius: 37px;
+  margin: 0px 0 7px 0px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.cell-red {
+  background-color: #ff6a6a;
+}
+
+.cell-blue {
+  background-color: #0376d1;
+}
+
+.newGame{
+  height: 30px;
+  background-color: #607D8B;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 3px 3px 7px 0 #bec3c6;
+
+  cursor: pointer;
+}
+
+.leftFoot, .rightFoot {
+  background-color:rgb(69, 170, 184);
+  width:30px;
+  height:100px;
+  float:left;
+}
+
+.leftFoot {
+
+}
+.rightFoot {
+  float:right;
+
+}
+
+.leftFoot:after, .rightFoot:after {
+  content:' ';
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  border-bottom: 80px solid rgb(69, 170, 184);
+  position: absolute;
+  bottom: -100px;
+}
+
+.leftFoot:after {
+  left:-20px;
+}
+.rightFoot:after {
+  right:-20px;
+}
+

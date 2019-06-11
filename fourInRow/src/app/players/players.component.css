@@ -1,0 +1,39 @@
+.players {
+display: flex;
+  justify-content: center;
+}
+
+.but {
+  height: 30px;
+  width: 50%;
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+  border-bottom: solid 4px #5a5b5b;
+  animation-name: myAnimation;
+  animation-duration: 1s;
+}
+
+.player-1 {
+
+  background-color: #ff6a6a;
+}
+.player-2 {
+  background-color: #0376d1;
+}
+
+.queue{
+  background-color: #5a5b5b;
+  border-bottom: solid 4px #eaea24;
+}
+
+
+@keyframes myAnimation{
+  0%{
+    transform: rotateX(90deg);
+  }
+  100%{
+    transform: rotateX(0deg);
+  }
+
+}

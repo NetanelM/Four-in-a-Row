@@ -1,0 +1,13 @@
+<div class="game-scope">
+   <div class="board">
+    <div class="row-game" *ngFor="let data of metaDateService.dataGame let prent = index">
+        <div *ngFor="let d of data let columnNumber = index"  (click)="checkWinner(metaDateService.dataGame,columnNumber)" class="cell"
+             [ngClass]="{'cell-red': d === 1 , 'cell-blue' : d  === 2}" ></div>
+    </div>
+  </div>
+
+  <div class="leftFoot"></div>
+  <div class="rightFoot"></div>
+
+</div>
+

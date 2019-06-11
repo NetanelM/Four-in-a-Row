@@ -1,0 +1,12 @@
+<div *ngIf="metaDateService.popupToggle" class="full-screen"></div>
+<div *ngIf="metaDateService.popupToggle" class="popup-wins">
+
+  <div class="winner">The <img class="trophy-img" src="./assets/trophy.svg" alt="the winner is"> is :
+    <span [ngClass]="{'red': metaDateService.player === 1,'blue': metaDateService.player === 2 }">
+      {{metaDateService.player}}</span>
+  </div>
+
+  <div class="play-again" (click)="playAgain()">Play Again <img class="smile-img" src="./assets/smile.svg"></div>
+
+</div>
+
